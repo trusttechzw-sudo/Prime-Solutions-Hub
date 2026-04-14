@@ -57,12 +57,12 @@ const services = [
 ];
 
 const portfolioItems = [
-  { title: "Corporate Rebrand", category: "Branding", image: "https://picsum.photos/seed/branding1/800/600" },
-  { title: "Annual Report 2023", category: "Printing", image: "https://picsum.photos/seed/print1/800/600" },
-  { title: "Tech Startup Web Design", category: "Digital", image: "https://picsum.photos/seed/digital1/800/600" },
-  { title: "Event Signage", category: "Large Format", image: "https://picsum.photos/seed/signage1/800/600" },
-  { title: "Luxury Packaging", category: "Branding", image: "https://picsum.photos/seed/branding2/800/600" },
-  { title: "Marketing Campaign", category: "Digital", image: "https://picsum.photos/seed/digital2/800/600" },
+  { title: "Minimalist Business Cards", category: "Branding", image: "https://picsum.photos/seed/business-card/800/600" },
+  { title: "Corporate Brand Identity", category: "Branding", image: "https://picsum.photos/seed/branding-design/800/600" },
+  { title: "Premium Annual Report", category: "Printing", image: "https://picsum.photos/seed/magazine-layout/800/600" },
+  { title: "Modern Web Interface", category: "Digital", image: "https://picsum.photos/seed/web-design/800/600" },
+  { title: "Exhibition Signage", category: "Large Format", image: "https://picsum.photos/seed/exhibition/800/600" },
+  { title: "Luxury Product Packaging", category: "Branding", image: "https://picsum.photos/seed/packaging/800/600" },
 ];
 
 const testimonials = [
@@ -198,7 +198,7 @@ export default function App() {
               We Build Brands That <span className="text-brand-gold">Mean Business</span>
             </h1>
             <p className="text-xl text-slate-300 mb-8 max-w-lg leading-relaxed">
-              Your vision. Our expertise. Delivered. We provide premium printing, branding, and digital solutions tailored for corporate excellence.
+              Your vision. Our expertise. Delivered. We provide premium printing, branding, and digital solutions tailored for corporate excellence in Gweru and across Zimbabwe.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
@@ -227,8 +227,8 @@ export default function App() {
           >
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-white/10">
               <img 
-                src="https://picsum.photos/seed/corporate/1000/1200" 
-                alt="Corporate Excellence" 
+                src="https://picsum.photos/seed/design-studio/1000/1200" 
+                alt="Professional Design Studio" 
                 className="w-full h-auto"
                 referrerPolicy="no-referrer"
               />
@@ -327,6 +327,19 @@ export default function App() {
               Our team of expert designers, printers, and digital strategists work in harmony to deliver results that don't just look good—they perform.
             </p>
             
+            <div className="flex items-center space-x-4 mb-10 p-4 bg-white/5 rounded-2xl border border-white/10">
+              <img 
+                src="https://picsum.photos/seed/trust/100/100" 
+                alt="Trust Madzungu" 
+                className="w-16 h-16 rounded-full border-2 border-brand-gold"
+                referrerPolicy="no-referrer"
+              />
+              <div>
+                <h4 className="font-bold text-white text-xl">Trust Madzungu</h4>
+                <p className="text-brand-gold font-medium">Founder & CEO</p>
+              </div>
+            </div>
+
             <div className="space-y-4 mb-10">
               {[
                 "15+ Years of Industry Experience",
@@ -492,7 +505,7 @@ export default function App() {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg">Email Us</h4>
-                    <p className="text-slate-600">hello@primesolutions.com</p>
+                    <p className="text-slate-600">trusttechzw@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -501,7 +514,7 @@ export default function App() {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg">Call Us</h4>
-                    <p className="text-slate-600">+1 (555) 123-4567</p>
+                    <p className="text-slate-600">+263 78 513 9208</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -510,7 +523,7 @@ export default function App() {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg">Visit Us</h4>
-                    <p className="text-slate-600">123 Business Avenue, Suite 500<br />Corporate Plaza, NY 10001</p>
+                    <p className="text-slate-600">Main Street, Gweru<br />Zimbabwe</p>
                   </div>
                 </div>
               </div>
@@ -566,7 +579,6 @@ export default function App() {
                 Your premier partner for integrated business solutions. We combine traditional craftsmanship with modern technology to deliver exceptional results for brands that mean business.
               </p>
               <div className="flex space-x-4">
-                {/* Social icons placeholders */}
                 {[1, 2, 3, 4].map((i) => (
                   <div key={i} className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-brand-navy transition-all cursor-pointer">
                     <div className="w-4 h-4 bg-current rounded-sm" />
@@ -605,7 +617,7 @@ export default function App() {
 
           <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-500 text-sm">
-              © {new Date().getFullYear()} Prime Solutions Hub. All rights reserved.
+              © {new Date().getFullYear()} Prime Solutions Hub. Founded by Trust Madzungu. All rights reserved.
             </p>
             <div className="flex space-x-8 text-sm text-slate-500">
               <a href="#" className="hover:text-brand-gold">Privacy Policy</a>
