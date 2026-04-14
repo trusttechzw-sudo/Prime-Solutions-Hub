@@ -15,7 +15,12 @@ import {
   Phone, 
   MapPin, 
   ArrowRight,
-  CheckCircle2
+  CheckCircle2,
+  Utensils,
+  Facebook,
+  Instagram,
+  Twitter,
+  Linkedin
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -53,6 +58,11 @@ const services = [
     title: "Promotional Materials",
     description: "Custom branded merchandise and apparel that keep your business top-of-mind for clients.",
     icon: ImageIcon,
+  },
+  {
+    title: "Menu Card Design",
+    description: "Elegant and durable menu cards for restaurants and hotels, designed to whet the appetite.",
+    icon: Utensils,
   }
 ];
 
@@ -63,6 +73,7 @@ const portfolioItems = [
   { title: "Modern Web Interface", category: "Digital", image: "https://picsum.photos/seed/web-design/800/600" },
   { title: "Exhibition Signage", category: "Large Format", image: "https://picsum.photos/seed/exhibition/800/600" },
   { title: "Luxury Product Packaging", category: "Branding", image: "https://picsum.photos/seed/packaging/800/600" },
+  { title: "Restaurant Menu Design", category: "Menu Cards", image: "https://picsum.photos/seed/menu/800/600" },
 ];
 
 const testimonials = [
@@ -374,7 +385,7 @@ export default function App() {
               </h2>
             </div>
             <div className="flex space-x-4 overflow-x-auto pb-2 md:pb-0">
-              {['All', 'Branding', 'Printing', 'Digital', 'Signage'].map((cat) => (
+              {['All', 'Branding', 'Printing', 'Digital', 'Signage', 'Menu Cards'].map((cat) => (
                 <button 
                   key={cat}
                   className={cn(
@@ -579,10 +590,20 @@ export default function App() {
                 Your premier partner for integrated business solutions. We combine traditional craftsmanship with modern technology to deliver exceptional results for brands that mean business.
               </p>
               <div className="flex space-x-4">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-brand-navy transition-all cursor-pointer">
-                    <div className="w-4 h-4 bg-current rounded-sm" />
-                  </div>
+                {[
+                  { icon: Facebook, href: "#", label: "Facebook" },
+                  { icon: Instagram, href: "#", label: "Instagram" },
+                  { icon: Twitter, href: "#", label: "Twitter" },
+                  { icon: Linkedin, href: "#", label: "LinkedIn" }
+                ].map((social, i) => (
+                  <a 
+                    key={i} 
+                    href={social.href}
+                    aria-label={social.label}
+                    className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-brand-navy transition-all cursor-pointer"
+                  >
+                    <social.icon size={18} />
+                  </a>
                 ))}
               </div>
             </div>
