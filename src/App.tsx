@@ -67,13 +67,13 @@ const services = [
 ];
 
 const portfolioItems = [
-  { title: "Minimalist Business Cards", category: "Branding", image: "https://picsum.photos/seed/business-card/800/600" },
-  { title: "Corporate Brand Identity", category: "Branding", image: "https://picsum.photos/seed/branding-design/800/600" },
+  { title: "Premium Business Cards", category: "Branding", image: "/input_file_0.png" },
+  { title: "Corporate Brand Identity", category: "Branding", image: "/input_file_1.png" },
   { title: "Premium Annual Report", category: "Printing", image: "https://picsum.photos/seed/magazine-layout/800/600" },
   { title: "Modern Web Interface", category: "Digital", image: "https://picsum.photos/seed/web-design/800/600" },
   { title: "Exhibition Signage", category: "Large Format", image: "https://picsum.photos/seed/exhibition/800/600" },
   { title: "Luxury Product Packaging", category: "Branding", image: "https://picsum.photos/seed/packaging/800/600" },
-  { title: "Restaurant Menu Design", category: "Menu Cards", image: "https://picsum.photos/seed/menu/800/600" },
+  { title: "Restaurant Menu Design", category: "Menu Cards", image: "/input_file_0.png" },
 ];
 
 const testimonials = [
@@ -238,8 +238,8 @@ export default function App() {
           >
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-white/10">
               <img 
-                src="https://picsum.photos/seed/design-studio/1000/1200" 
-                alt="Professional Design Studio" 
+                src="/input_file_1.png" 
+                alt="Prime Solutions Hub Services" 
                 className="w-full h-auto"
                 referrerPolicy="no-referrer"
               />
@@ -306,13 +306,13 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: -0 }}
             viewport={{ once: true }}
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10">
               <img 
-                src="https://picsum.photos/seed/about/800/1000" 
-                alt="Our Team" 
+                src="/input_file_2.png" 
+                alt="Prime Solutions Hub Portfolio" 
                 className="w-full h-auto"
                 referrerPolicy="no-referrer"
               />
@@ -534,7 +534,7 @@ export default function App() {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg">Visit Us</h4>
-                    <p className="text-slate-600">Main Street, Gweru<br />Zimbabwe</p>
+                    <p className="text-slate-600">Gweru Mkoba 13, House 710/2<br />Zimbabwe</p>
                   </div>
                 </div>
               </div>
